@@ -4,6 +4,7 @@
 
 - install inkscape
 - `brew install imagemagick`
+- `alias inkscape="/Applications/Inkscape.app/Contents/MacOS/inkscape"`
 
 ## Steps
 
@@ -24,7 +25,6 @@
 - Generate other files
 
   ```bash
-  # Can use /Applications/Inkscape.app/Contents/MacOS/inkscape instead of inkscape on mac
   inkscape ./icon.svg --export-width=512 --export-filename="./icon-512.png"
   inkscape ./icon.svg --export-width=192 --export-filename="./icon-192.png"
   inkscape ./icon.svg --export-width=180 --export-filename="./apple.png"

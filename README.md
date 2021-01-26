@@ -45,6 +45,8 @@
 
 ## Links
 
-Example [here](https://maweeks.github.io/favicon-auto-change/)
+Example [on GitHub pages](https://maweeks.github.io/favicon-auto-change/)
 
-[Source](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
+[Source 1 - all your favicon needs](https://evilmartians.com/chronicles/how-to-favicon-in-2021-six-files-that-fit-most-needs)
+
+[Source 2 - change file](https://www.jerriepelser.com/blog/change-favicon-application-state/)

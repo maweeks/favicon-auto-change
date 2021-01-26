@@ -1,0 +1,10 @@
+<svg width="128" height="128"
+   xmlns="http://www.w3.org/2000/svg">
+   <style>
+      circle { fill: #0000ff; }
+      @media (prefers-color-scheme: dark) {
+         circle { fill: #33ff33; }
+      }
+   </style>
+   <circle cx="64" cy="64" r="40" stroke="black" stroke-width="3" fill="red" />
+</svg>

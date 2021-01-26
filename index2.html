@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>Basic SVG favicon</title>
+        <title>Change icon</title>
         <link rel="icon" href="./favicon.ico"><!-- 32×32 -->
-        <link rel="icon" href="./icon.svg" type="image/svg+xml">
+        <link id="dynamic-favicon" rel="icon" href="./icon.svg" type="image/svg+xml">
         <link rel="apple-touch-icon" href="./apple.png"><!-- 180×180 -->
         <link rel="manifest" href="./manifest.webmanifest">
         <style>
@@ -26,5 +26,20 @@
     <body>
         <p><a href="./index.html">Here</a> A favicon that uses svg to auto change for OS light/dark mode!</p>
         <p><a href="./index2.html">Here</a> Switch svg favicon after page load.</p>
+        <button onclick="changeFavicon('./icon.svg')">Star icon</button>
+        <button onclick="changeFavicon('./iconCircle.svg')">Circle icon</button>
     </body>
+    <script type="text/javascript">
+        function changeFavicon(src) {
+            var link = document.createElement('link'),
+                oldLink = document.getElementById('dynamic-favicon');
+            link.id = 'dynamic-favicon';
+            link.rel = 'shortcut icon';
+            link.href = src;
+            if (oldLink) {
+                document.head.removeChild(oldLink);
+            }
+            document.head.appendChild(link);
+        }
+    </script>
 </html>
